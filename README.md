@@ -1,16 +1,97 @@
-# mini_calculator_app
+📱 Flutter Mini Calculator App
 
-A new Flutter project.
+A clean and beginner-friendly calculator app built with Flutter + Dart.
+Designed as a mini project to understand functions, parameters, return types, UI interaction, and basic state management.
 
-## Getting Started
+This calculator performs integer operations with safe handling for invalid cases like division by zero.
 
-This project is a starting point for a Flutter application.
+✨ Features
 
-A few resources to get you started if this is your first Flutter project:
+🧮 Addition, subtraction, multiplication, division
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+🚫 Division-by-zero protection
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+🔢 Default display value of 0
+
+📱 Simple and clean UI layout
+
+⚡ Fast, lightweight, easy to understand
+
+🎓 Perfect for beginners learning Dart functions and calculator logic
+
+📸 Screenshot (Optional)
+
+Add your screenshots here
+Example: /screenshots/calculator.png
+
+🛠️ Tech Stack
+
+Flutter (UI framework)
+
+Dart (programming language)
+
+Material Design
+
+Basic function logic (calculate()) using parameters + return types
+
+📂 Project Structure
+lib/
+  main.dart
+  calculator.dart   // your logic and UI code
+assets/
+README.md
+
+
+You can adjust this depending on your file organization.
+
+🧠 How It Works
+
+This project uses a simple function:
+
+int calculate(int a, int b, String op) {
+  if (op == "+") return a + b;
+  if (op == "-") return a - b;
+  if (op == "*") return a * b;
+  if (op == "/") {
+    if (b == 0) return 0; 
+    return a ~/ b;
+  }
+  return 0;
+}
+
+
+This demonstrates:
+
+How functions receive parameters
+
+How they compute values
+
+How they return results back to the UI
+
+▶️ How to Run the App
+flutter pub get
+flutter run
+
+
+Make sure you have Flutter installed:
+https://docs.flutter.dev/get-started/install
+
+🧪 Future Improvements (Optional)
+
+Add decimal support
+
+Add percentage operator
+
+Add history of calculations
+
+Better UI styling
+
+Turn the calculate function into its own service file
+
+🤝 Contributing
+
+Feel free to fork this repo, open issues, or submit pull requests.
+
+📜 License
+
+This project is open-source and available under the MIT License.
